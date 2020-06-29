@@ -1,12 +1,30 @@
-h4, h6{
-    margin-top:0px;
-    padding:7px;
-    
+h4, h6 
+{
+    margin-top: 0px;
+    padding: 7px;
 }
 .cardsDisplay{
     margin-top: 10px;;
 }
 
+.green{
+    background-color: green;
+}
 
+.yellow{
+    background-color: yellow;
+}
+
+.orange{
+    background-color: orangered;
+}
+
+.red{
+    background-color: red;
+}
+
+.purple{
+    background-color:darkslateblue;
+}
 
     

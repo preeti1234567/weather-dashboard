@@ -7,150 +7,102 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js "></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/script.css">
 </head>
 
 <body>
-    <!--<div class="col-xs-3 col-sm-6 col-md-12">-->
-        <nav class="  navbar-dark bg-dark">
-            <h4 class="text-white text-center" style="margin-top:0px"><img src="https://img.icons8.com/fluent/50/000000/cloud.png" />Weather
-                Dashboard</h4>
-
-        </nav>
-    <!--</div>-->
-
+    <nav class="  navbar-dark bg-dark">
+        <h4 class="text-white text-center"><img src="https://img.icons8.com/fluent/50/000000/cloud.png" />Weather Dashboard</h4>
+    </nav>
     <div class="container">
-
         <div class="row ">
-            <div class=" col-xs-3 col-sm-6 col-md-3 ">
+            <div class="col-xs-3 col-sm-6 col-md-3 bg-light ">
                 <h4>Search for the city</h4>
-
                 <div class="input-group-append">
-                    <input type="text" class="form-control">
-
+                    <input type="text" class="form-control" id="inputSearchBox">
                     <button class="btn btn-info btn-md " type="button" id="searchBtn">
                         <span class="glyphicon glyphicon-search"></span>
                     </button>
-
                 </div>
                 <div class=" border-white cardsDisplay">
-
                     <ul>
-                        <li>
-
-                        </li>
-                        <li>
-
-                        </li>
+                        <li></li>
+                        <li></li>
                     </ul>
-
                 </div>
             </div>
             <div class=" col-xs-3 col-sm-6 col-md-9 " id="forecastCard">
                 <div class="card">
-
                     <div class="card-body">
-                        <h5 class="card-title">
-                            <h4><img src="https://img.icons8.com/fluent/50/000000/cloud.png" /> </h4>
-                            <p class="card-text">Temperature:</p>
-                            <p class="card-text">Humidity:</p>
-                            <p class="card-text">Wind Speed:</p>
-                            <p class="card-text">UV index:</p>
+                        <h4 class="card-title">
+                            <p class="h3"><span id="cityName"></span><span id="date-0"></span><img id ="weathericon-0"></img></p>
+                            <p class="card-text">Temperature:<span id ="temperature-0"></span></p>
+                            <p class="card-text">Humidity:<span id ="humidity-0"></span></p>
+                            <p class="card-text">Wind Speed:<span id ="windSpeed-0"></span></p>
+                            <p class="card-text">UV index:<span id ="uv_index-0"></span></p>
                     </div>
                 </div>
                 <div class="cardsDisplay col-xs-3 col-sm-6 col-md-3 ">
-
-                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;height: 18rem">
+                    <div class="card text-white bg-primary mb-3" >
                         <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <h6 class="card-title"><img src=""></h6>
-                            <h6 class="card-title">Temperature:</h6>
-                            <h6 class="card-title">Humidity:</h6>
+                            <p class="h4 card-title" id="date-1">Primary card title</p>
+                            <img id ="weathericon-1"></img>
+                            <p class="card-text">Temperature:<span id ="temperature-1"></span></p>
+                            <p class="card-text">Humidity:<span id ="humidity-1"></span></p>
                         </div>
                     </div>
                 </div>
                 <div class="cardsDisplay col-xs-3 col-sm-6 col-md-3">
-                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;height: 18rem">
+                    <div class="card text-white bg-primary mb-3" >
                         <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <h6 class="card-title"><img src=""></h6>
-                            <h6 class="card-title">Temperature:</h6>
-                            <h6 class="card-title">Humidity:</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cardsDisplay col-xs-3 col-sm-6 col-md-3">
-                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;height: 18rem">
-                        <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <h6 class="card-title"><img src=""></h6>
-                            <h6 class="card-title">Temperature:</h6>
-                            <h6 class="card-title">Humidity:</h6>
+                            <p class="h4 card-title" id="date-2">Primary card title</p>
+                            <img id ="weathericon-2"></img>
+                            <p class="card-text">Temperature:<span id ="temperature-2"></span></p>
+                            <p class="card-text">Humidity:<span id ="humidity-2"></span></p>
                         </div>
                     </div>
                 </div>
                 <div class="cardsDisplay col-xs-3 col-sm-6 col-md-3">
-
-                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;height: 18rem">
+                    <div class="card text-white bg-primary mb-3" >
                         <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <h6 class="card-title"><img src=""></h6>
-                            <h6 class="card-title">Temperature:</h6>
-                            <h6 class="card-title">Humidity:</h6>
+                            <p class="h4 card-title" id="date-3">Primary card title</p>
+                            <img id ="weathericon-3"></img>
+                            <p class="card-text">Temperature:<span id ="temperature-3"></span></p>
+                            <p class="card-text">Humidity:<span id ="humidity-3"></span></p>
                         </div>
                     </div>
                 </div>
-
+                <div class="cardsDisplay col-xs-3 col-sm-6 col-md-3">
+                    <div class="card text-white bg-primary mb-3" >
+                        <div class="card-body">
+                            <p class="h4 card-title" id="date-4">Primary card title</p>
+                            <img id ="weathericon-4"></img>
+                            <p class="card-text">Temperature:<span id ="temperature-4"></span></p>
+                            <p class="card-text">Humidity:<span id ="humidity-4"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardsDisplay col-xs-3 col-sm-6 col-md-3">
+                    <div class="card text-white bg-primary mb-3" >
+                        <div class="card-body">
+                            <p class="h4 card-title" id="date-5">Primary card title</p>
+                            <img id ="weathericon-5"></img>
+                            <p class="card-text">Temperature:<span id ="temperature-5"></span></p>
+                            <p class="card-text">Humidity:<span id ="humidity-5"></span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
-
         </div>
-
-
     </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 
 </html>
