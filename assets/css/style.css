@@ -1,0 +1,49 @@
+h4, h6 
+{
+    margin-top: 0px;
+    padding: 7px;
+}
+.listDisplay{
+    margin-top: 5px;
+}
+.cardMain{
+    background-color: rgb(173, 198, 230);    
+    width: 97%;
+}
+.cardMain  p {
+    margin-left: 10px;
+}
+
+.cardsDisplay{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 18%;
+    display: inline-block;
+    background-color: rgb(173, 198, 230);    
+}
+
+.cardsDisplay  p {
+    margin-left: 10px;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.orange{
+    background-color: orangered;
+}
+
+.red{
+    background-color: red;
+}
+
+.purple{
+    background-color:darkslateblue;
+}
+
+    
