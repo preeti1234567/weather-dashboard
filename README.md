@@ -40,7 +40,7 @@ The purpose of this project was to create a weather dashboard which will display
 
 
 
-My Weather Dashboard Website Link ->  ()
+My Weather Dashboard Website Link ->  (https://preeti1234567.github.io/weather-dashboard/)
 Default Page
 ![Weather Dashboard ByDefault](assets/images/snapshot2.png)
 After Select/Searching City
